@@ -134,7 +134,7 @@ public class Fecha {
 	}
 
 	/**
-	 * Método toString para mostrar la fecha
+	 * Metodo toString para mostrar la fecha
 	 */
 	@Override
 	public String toString() {
@@ -159,4 +159,15 @@ public class Fecha {
 		Period diff = Period.between(pdate, now);
 		return diff.getYears();
 	}
+
+	/**
+	 * Metodo que le suma una cantidad de dias a una fecha dada.
+	 * 
+	 * @return
+	 */
+	public Fecha sumarDias(Fecha fecha, int dias) {
+		LocalDate res = LocalDate.of(fecha.getAnio(), fecha.getMes(), fecha.getDia()).plusDays(dias);
+		return new Fecha(res.getDayOfMonth(), res.getMonth().getValue(), res.getYear());
+	}
+
 }
