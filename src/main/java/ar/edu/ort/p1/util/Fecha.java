@@ -165,8 +165,8 @@ public class Fecha {
 	 * 
 	 * @return
 	 */
-	public Fecha sumarDias(Fecha fecha, int dias) {
-		LocalDate res = LocalDate.of(fecha.getAnio(), fecha.getMes(), fecha.getDia()).plusDays(dias);
+	public Fecha sumarDias(int dias) {
+		LocalDate res = LocalDate.of(this.getAnio(), this.getMes(), this.getDia()).plusDays(dias);
 		return new Fecha(res.getDayOfMonth(), res.getMonth().getValue(), res.getYear());
 	}
 
