@@ -1,5 +1,10 @@
 package ar.edu.ort.p1.util;
 
+/**
+ * 
+ * @author ihsanch
+ *
+ */
 public class Matematica {
 
 	/**
@@ -15,7 +20,7 @@ public class Matematica {
 	}
 
 	/**
-	 * Metodo que recibe un valor x y un valor p. El p% de x es retornado.
+	 * Metodo que recibe un valor x y un valor p. El x% de p es retornado.
 	 * 
 	 * @param x
 	 * @param b
@@ -25,6 +30,12 @@ public class Matematica {
 		return (x * p) / 100;
 	}
 
+	/**
+	 * 
+	 * @param acu
+	 * @param total
+	 * @return
+	 */
 	public static double promedio(double acu, double total) {
 		double porc = 0;
 		if (total > 0) {
@@ -33,6 +44,12 @@ public class Matematica {
 		return porc;
 	}
 
+	/**
+	 * 
+	 * @param casos
+	 * @param total
+	 * @return
+	 */
 	public static double porcentaje(int casos, int total) {
 		return promedio(casos, total);
 	}

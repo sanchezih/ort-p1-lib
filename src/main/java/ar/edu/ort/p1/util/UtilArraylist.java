@@ -2,6 +2,11 @@ package ar.edu.ort.p1.util;
 
 import java.util.ArrayList;
 
+/**
+ * 
+ * @author ihsanch
+ *
+ */
 public class UtilArraylist {
 
 	/**
