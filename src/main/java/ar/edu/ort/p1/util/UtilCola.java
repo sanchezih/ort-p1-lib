@@ -4,7 +4,20 @@ import ar.edu.ort.tp1.u5.tda.impl.ColaNodos;
 
 public class UtilCola {
 
-	public static <T> void mostrarColaEmps(ColaNodos<T> cola) {
+	/**
+	 * 
+	 * @param <T>
+	 * @param cola
+	 */
+	public static <T> void mostrar(ColaNodos<T> cola) {
 
+		T centinela = null;
+		cola.add(centinela);
+		T elemento = cola.remove();
+		while (elemento != centinela) {
+			System.out.println("\t-> " + elemento);
+			cola.add(elemento);
+			elemento = cola.remove();
+		}
 	}
 }
