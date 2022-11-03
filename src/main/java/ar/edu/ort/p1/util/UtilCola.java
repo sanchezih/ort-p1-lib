@@ -1,6 +1,6 @@
 package ar.edu.ort.p1.util;
 
-import ar.edu.ort.tp1.u5.tda.impl.ColaNodos;
+import ar.edu.ort.tp1.u5.tda.interfaces.Cola;
 
 public class UtilCola {
 
@@ -9,7 +9,7 @@ public class UtilCola {
 	 * @param <T>
 	 * @param cola
 	 */
-	public static <T> void mostrar(ColaNodos<T> cola) {
+	public static <T> void mostrar(Cola<T> cola) {
 
 		T centinela = null;
 		cola.add(centinela);
