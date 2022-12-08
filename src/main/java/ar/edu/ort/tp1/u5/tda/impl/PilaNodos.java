@@ -3,7 +3,6 @@ package ar.edu.ort.tp1.u5.tda.impl;
 import ar.edu.ort.tp1.u5.tda.interfaces.Pila;
 
 public class PilaNodos<T> extends TdaNodos<T> implements Pila<T> {
-
 	public PilaNodos() {
 		super();
 	}

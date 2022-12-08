@@ -1,7 +1,6 @@
 package ar.edu.ort.tp1.u5.tda.impl;
 
 public class NodoLista<T> extends Nodo<T> {
-
 	private NodoLista<T> previous;
 
 	public NodoLista(T dato) {
@@ -18,11 +17,10 @@ public class NodoLista<T> extends Nodo<T> {
 	}
 
 	/**
-	 * @return valor booleano indicando si hay un nodo anterior (si no es el
-	 *         primero de la lista)
+	 * @return valor booleano indicando si hay un nodo anterior (si no es el primero
+	 *         de la lista)
 	 */
 	public boolean hasPrevious() {
 		return previous != null;
 	}
-
 }
