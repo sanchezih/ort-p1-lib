@@ -165,6 +165,8 @@ public class UtilArrays {
 	 * arrays de caracteres (sin repeticiones) recibidos como parametros (el primero
 	 * menos el segundo).
 	 * 
+	 * https://es.wikipedia.org/wiki/Diferencia_de_conjuntos
+	 * 
 	 * @param cjto1
 	 * @param cjto2
 	 */
@@ -194,6 +196,8 @@ public class UtilArrays {
 	 * Ejercicio TP4-18: Mostrar los valores resultantes de la diferencia simetrica
 	 * de dos arrays de caracteres (sin repeticiones) recibidos como parametros (el
 	 * primero menos el segundo).
+	 * 
+	 * https://es.wikipedia.org/wiki/Diferencia_simetrica
 	 * 
 	 * @param cjto1
 	 * @param cjto2
