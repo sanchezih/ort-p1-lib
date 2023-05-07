@@ -99,6 +99,16 @@ public class UtilArrays {
 
 	/*----------------------------------------------------------------------------*/
 
+	/**
+	 * Ejercicio TP4-15: Mostrar los valores resultantes de la union de dos arrays
+	 * de caracteres (sin repeticiones) recibidos como parametros.
+	 * 
+	 * https://es.wikipedia.org/wiki/Union_de_conjuntos
+	 * 
+	 * @param cjto1
+	 * @param cjto2
+	 * @return
+	 */
 	public static char[] unirConjuntos(char[] cjto1, char[] cjto2) {
 		char[] res = new char[cjto1.length + cjto2.length];
 		char i = 0;
@@ -107,22 +117,6 @@ public class UtilArrays {
 		}
 		for (char c : cjto2) {
 			res[i++] = c;
-		}
-		return res;
-	}
-
-	public static char[] unirConjuntosObviandoRepetidos(char[] cjto1, char[] cjto2) {
-		char[] res = new char[cjto1.length + cjto2.length];
-		char i = 0;
-		for (char c : cjto1) {
-			if (!contiene(res, c)) {
-				res[i++] = c;
-			}
-		}
-		for (char c : cjto2) {
-			if (!contiene(res, c)) {
-				res[i++] = c;
-			}
 		}
 		return res;
 	}
@@ -144,8 +138,8 @@ public class UtilArrays {
 	/*----------------------------------------------------------------------------*/
 
 	/**
-	 * Ejercicio TP4-16: Mostrar los valores resultantes de la intersección de dos
-	 * arrays de caracteres (sin repeticiones) recibidos como parámetros.
+	 * Ejercicio TP4-16: Mostrar los valores resultantes de la interseccion de dos
+	 * arrays de caracteres (sin repeticiones) recibidos como parametros.
 	 * 
 	 * @param cjto1
 	 * @param cjto2
@@ -197,8 +191,8 @@ public class UtilArrays {
 	/*----------------------------------------------------------------------------*/
 
 	/**
-	 * Ejercicio TP4-18: Mostrar los valores resultantes de la diferencia simétrica
-	 * de dos arrays de caracteres (sin repeticiones) recibidos como parámetros (el
+	 * Ejercicio TP4-18: Mostrar los valores resultantes de la diferencia simetrica
+	 * de dos arrays de caracteres (sin repeticiones) recibidos como parametros (el
 	 * primero menos el segundo).
 	 * 
 	 * @param cjto1
