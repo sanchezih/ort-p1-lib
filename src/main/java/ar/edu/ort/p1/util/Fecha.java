@@ -123,4 +123,15 @@ public class Fecha {
 		return new Fecha(res.getDayOfMonth(), res.getMonth().getValue(), res.getYear());
 	}
 
+	/**
+	 * 
+	 * @param fecha1
+	 * @param fecha2
+	 * @return
+	 */
+	public static int diasTranscurridosEntreFechas(Fecha fecha1, Fecha fecha2) {
+		return (int) ChronoUnit.DAYS.between(LocalDate.of(fecha1.anio, fecha1.mes, fecha1.dia),
+				LocalDate.of(fecha2.anio, fecha2.mes, fecha2.dia));
+	}
+
 }
