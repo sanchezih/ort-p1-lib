@@ -9,8 +9,7 @@ public class UtilCola {
 	 * @param <T>
 	 * @param cola
 	 */
-	public static <T> void mostrar(Cola<T> cola) {
-
+	public static <T> void mostrarColaGenerica(Cola<T> cola) {
 		T centinela = null;
 		cola.add(centinela);
 		T elemento = cola.remove();
