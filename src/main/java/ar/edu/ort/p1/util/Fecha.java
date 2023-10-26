@@ -77,7 +77,7 @@ public class Fecha {
 	/**
 	 * Devuelve el anio actual en int
 	 */
-	public static int anioActual() {
+	public static int getAnioActual() {
 		return Calendar.getInstance().get(Calendar.YEAR);
 	}
 
