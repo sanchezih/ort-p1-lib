@@ -2,12 +2,6 @@ package ar.edu.ort.p1.util;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Charly Cimino Aprende mas Java en mi canal:
- *         https://www.youtube.com/c/CharlyCimino Encontra más codigo en mi repo
- *         de GitHub: https://github.com/CharlyCimino
- */
 public class Consola {
 
 	private static Scanner input = new Scanner(System.in);
@@ -16,7 +10,7 @@ public class Consola {
 	} // Anula la creacion de objetos de tipo 'Consola'
 
 	/**
-	 * Imprime un objeto en la consola y salta una línea
+	 * Imprime un objeto en la consola y salta una linea
 	 *
 	 * @param x El objeto a ser impreso.
 	 */
@@ -25,7 +19,7 @@ public class Consola {
 	}
 
 	/**
-	 * Imprime un objeto en la consola sin saltar de línea
+	 * Imprime un objeto en la consola sin saltar de linea
 	 *
 	 * @param x El objeto a ser impreso.
 	 */
@@ -46,7 +40,7 @@ public class Consola {
 	 * Muestra al usuario un mensaje y luego retorna un dato colocado por el usuario
 	 * en la consola como String
 	 *
-	 * @param mensaje El mensaje que el usuario verá antes de ingresar un dato.
+	 * @param mensaje El mensaje que el usuario vera antes de ingresar un dato.
 	 * @return El dato colocado por el usuario en la consola como String
 	 */
 	public static String leer(String mensaje) {
@@ -69,7 +63,7 @@ public class Consola {
 	 * Muestra al usuario un mensaje y luego retorna un dato colocado por el usuario
 	 * en la consola como entero
 	 *
-	 * @param mensaje El mensaje que el usuario verá antes de ingresar un dato.
+	 * @param mensaje El mensaje que el usuario vera antes de ingresar un dato.
 	 * @return El dato colocado por el usuario en la consola como entero
 	 * @throws NumberFormatException si el dato ingresado no representa un entero.
 	 */
@@ -92,7 +86,7 @@ public class Consola {
 	 * Muestra al usuario un mensaje y luego retorna un dato colocado por el usuario
 	 * en la consola como double
 	 *
-	 * @param mensaje El mensaje que el usuario verá antes de ingresar un dato.
+	 * @param mensaje El mensaje que el usuario vera antes de ingresar un dato.
 	 * @return El dato colocado por el usuario en la consola como double
 	 * @throws NumberFormatException si el dato ingresado no representa un double.
 	 */
@@ -102,7 +96,7 @@ public class Consola {
 
 	/**
 	 * Muestra al usuario un mensaje y luego retorna un dato colocado por el usuario
-	 * en la consola como caracter. Si el usuario ingresa más de un caracter, solo
+	 * en la consola como caracter. Si el usuario ingresa mas de un caracter, solo
 	 * se devuelve el primero. EJ: "Hola" --> 'H'
 	 *
 	 * @return El dato colocado por el usuario en la consola como caracter
@@ -113,10 +107,10 @@ public class Consola {
 
 	/**
 	 * Muestra al usuario un mensaje y luego retorna un dato colocado por el usuario
-	 * en la consola como caracter. Si el usuario ingresa más de un caracter, solo
+	 * en la consola como caracter. Si el usuario ingresa mas de un caracter, solo
 	 * se devuelve el primero. EJ: "Hola" --> 'H'
 	 *
-	 * @param mensaje El mensaje que el usuario verá antes de ingresar un dato.
+	 * @param mensaje El mensaje que el usuario vera antes de ingresar un dato.
 	 * @return El dato colocado por el usuario en la consola como caracter
 	 */
 	public static char leerCaracter(String mensaje) {
